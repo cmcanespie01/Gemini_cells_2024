@@ -11,7 +11,7 @@
     notes = 'Initial Calibration'
     proc_file = '20240213_calib.pkl'
     start = {date = 20240213, run = 'run01', shot = 0}
-    end = {date = 20240213, run = 'run01', shot = 0}
+    end = {date = 20240513, run = 'run01', shot = 0}
 
     [20240213.transform]
     description = "20240213 spatial calibration"
@@ -32,7 +32,7 @@
     notes = ""   
 
     [20240213.dispersion]
-    filename = "LowEspec_dispersion_20240207_run01_shot001.csv"
+    filename = "HighEspec_transform_20240207_run01_shot001.csv"
     spatial_units = "mm"
     spectral_units = "MeV"
     axis = "x"

@@ -1,24 +1,17 @@
 [ESpec]
 on_startup = false
 type = 'ESpec'
-data_folder = '/eSpec/' 
+data_folder = 'HighEspec/' 
 data_type = 'image'
-data_ext = 'tiff'
+data_ext = 'tif'
 calib_subfolder = './ESpec/' # optional
 calib_file = 'ESpec_calibs.toml'
 
 [ESpec_low]
 on_startup = false
 type = 'ESpec'
-data_folder = '/eSpec_low/' 
+data_folder = 'LowEspec/' 
 data_type = 'image'
-data_ext = 'tiff'
+data_ext = 'tif'
 calib_subfolder = './ESpec_low/' # optional
 calib_file = 'ESpec_low_calibs.toml'
-
-[GammaProfile]
-on_startup = false
-type = 'Camera'
-data_folder = '/Zyla VSC-26275/'
-data_ext = 'tiff'
-calib_file = 'GammaProfile_calibs.toml'
