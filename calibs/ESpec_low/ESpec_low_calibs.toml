@@ -18,18 +18,16 @@
     raw_img = '../Gemini_cells_2024/calibs/ESpec_low/20240207_low_espec_reference.tiff' # can be filepath or shot dict?
     # E.g. tpoints = [[x1_px, y1_px], [x1_mm, y1_mm], ... ]
     tpoints = [
-        [1615, 84], [0, 0],
-        [1264, 658], [147, 0],
-        [902, 1225], [294, 0],
-        [1058, 1415], [294, 75],
-        [1473, 777], [147, 75],
-        [1818, 263], [0, 75],
+        [1947, 267], [0, 0],
+        [1203, 1391], [294, 0],
+        [1048, 1232], [294, 75],
+        [1783, 107], [0, 75],
         ]
     img_size_t = [294,75]
     offsets = [0,0]
     e_offsets = [0,0] # if displacement doesn't start at zero point on lanex, some shift off, can define here?
     img_size_px = [1000,200]
-    notes = ""   
+    notes = "Kinda rough to make it work, these should be checked in some more detail!!!!!"   
 
     [20240207.dispersion]
     filename = "/Users/cmcanespie/Documents/Gemini_cells_2024/Gemini_cells_2024/calibs/ESpec_low/LowEspec_dispersion_20240207_run01_shot001.csv"
@@ -49,4 +47,4 @@
     axis = "y"
 
     [20240207.charge]
-    fC_per_count = 0.001 ## Very small arb number for relative measurements
+    fC_per_count = 0.003 ## Very small arb number for relative measurements
