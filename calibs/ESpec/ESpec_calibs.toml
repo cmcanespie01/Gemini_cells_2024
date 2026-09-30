@@ -1,0 +1,52 @@
+# Calibration  files use the TOML language: https://toml.io/en/
+# Each different calibration should have it's own entry of the following format;
+# [calibration_id]
+#   notes = 'Some calibration notes'
+#   proc_file = 'OutPutFileName.pkl' # if making processed details elsewhere...
+#   start = {A Shot dictionary} # e.g. {date = 20240110, run = 'run01', shot = 0}
+#   end = {A Shot dictionary} # e.g. {date = 20240110, run = 'run01', shot = 0}
+#   ...
+
+[20240213]
+    notes = 'Initial Calibration'
+    proc_file = '20240213_calib.pkl'
+    start = {date = 20240213, run = 'run01', shot = 0}
+    end = {date = 20240213, run = 'run01', shot = 0}
+
+    [20240213.transform]
+    description = "20240213 spatial calibration"
+    raw_img = '../Gemini_cells_2024/calibs/ESpec/20240207_HighEspec_ref.tiff' # can be filepath or shot dict?
+    # E.g. tpoints = [[x1_px, y1_px], [x1_mm, y1_mm], ... ]
+    tpoints = [
+        [1103, 113], [0, 0],
+        [1103, 1073], [150, 0],
+        [1116, 2155], [300, 0],
+        [1609, 2150], [300, 60],
+        [1561, 1060], [150, 60],
+        [1542, 108], [0, 60],
+        ]
+    img_size_t = [300,60]
+    offsets = [0,0]
+    e_offsets = [0,0] # if displacement doesn't start at zero point on lanex, some shift off, can define here?
+    img_size_px = [1000,200]
+    notes = ""   
+
+    [20240213.dispersion]
+    filename = "LowEspec_dispersion_20240207_run01_shot001.csv"
+    spatial_units = "mm"
+    spectral_units = "MeV"
+    axis = "x"
+    
+    [20240213.background] 
+    stage = 'transformed'
+    type = 'gradient' 
+    axis = 'horizontal'
+    order = 6
+    roi =  [[50,20], [900,40]]
+
+    [20240213.divergence]
+    mm_to_screen = 1670 
+    axis = "y"
+
+    [20240213.charge]
+    fC_per_count = 0.001 ## Very small arb number for relative measurements

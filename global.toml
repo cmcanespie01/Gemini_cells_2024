@@ -1,0 +1,8 @@
+[setup]
+DAQ = 'GeminiMirage'
+
+[paths]
+calibs_folder = './calibs/' 
+results_folder = './results/'
+user_diagnostics = 'diagnostics.' # this is as per python moadule loading. So '.' for folders...
+user_DAQs = 'DAQs.'  # this is as per python moadule loading. So '.' for folders...
