@@ -1,4 +1,4 @@
-# ZEUS Linear Breit-Wheeler experiment, August 2026
+# Gemini 2024 shared repository
 
 Shared analysis repository. Assumes LAMP is installed (see guidance below). Once cloned, rename _local.toml to local.toml, and edits its contents to fit your local setup for experiment analysis (i.e. define your local data path).
 
