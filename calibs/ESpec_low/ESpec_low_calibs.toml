@@ -48,3 +48,6 @@
 
     [20240207.charge]
     fC_per_count = 0.003 ## Very small arb number for relative measurements
+    
+#    [20240207.charge] From Hannah M
+#    fC_per_count = 0.0012

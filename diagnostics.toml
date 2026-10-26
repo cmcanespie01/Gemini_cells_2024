@@ -1,7 +1,7 @@
 [ESpec]
 on_startup = false
 type = 'ESpec'
-data_folder = 'HighEspec/' 
+data_folder = '/HighEspec/' 
 data_type = 'image'
 data_ext = 'tif'
 calib_subfolder = './ESpec/' # optional
@@ -10,7 +10,7 @@ calib_file = 'ESpec_calibs.toml'
 [ESpec_low]
 on_startup = false
 type = 'ESpec'
-data_folder = 'LowEspec/' 
+data_folder = '/LowEspec/' 
 data_type = 'image'
 data_ext = 'tif'
 calib_subfolder = './ESpec_low/' # optional
