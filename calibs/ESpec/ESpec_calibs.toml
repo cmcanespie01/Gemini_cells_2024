@@ -26,7 +26,7 @@
     img_size_t = [60,414]
     offsets = [0,0]
     e_offsets = [0,0] # if displacement doesn't start at zero point on lanex, some shift off, can define here?
-    img_size_px = [1000,200]
+    img_size_px = [200,1000]
     notes = ""   
 
     [20240213.dispersion]
@@ -35,19 +35,19 @@
     spectral_units = "MeV"
     axis = "y"
     
-#     [20240213.background] 
-#     stage = 'transformed'
-#     type = 'gradient' 
-#     axis = 'horizontal'
-#     order = 6
-#     roi =  [[50,20], [900,40]]
+    [20240213.background] 
+    stage = 'transformed'
+    type = 'gradient' 
+    axis = 'vertical'
+    order = 6
+    roi =  [[10, 5], [30,995]]
 
     [20240213.divergence]
     mm_to_screen = 1670 
     axis = "x"
 
     [20240213.charge]
-    fC_per_count = 0.001 ## Very small arb number for relative measurements
+    fC_per_count = 2.44e-3 ## Very small arb number for relative measurements
     
     ##[20240213.charge] From Hannah M 
     ##fC_per_count = 2.44e-3
